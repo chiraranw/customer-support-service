@@ -20,6 +20,7 @@ public class Ticket {
     private String id;
     private String description;
     private LocalDateTime dateCreated;
+    private LocalDateTime dateClosed;
     private TicketStatus ticketStatus;
     private String assignee;
 }

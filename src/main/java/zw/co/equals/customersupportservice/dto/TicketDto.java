@@ -15,4 +15,5 @@ public class TicketDto {
     private TicketStatus ticketStatus;
     @NotBlank(message = "Assignee is required, cannot be null or empty.")
     private String assignee;
+    private LocalDateTime dateClosed;
 }

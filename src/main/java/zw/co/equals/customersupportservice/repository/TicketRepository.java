@@ -11,4 +11,5 @@ import java.util.Optional;
 public interface TicketRepository extends MongoRepository<Ticket, String> {
 
     List<Ticket> findByAssignee(String assignee);
+    Optional<Ticket> findTicketById(String id);
 }
