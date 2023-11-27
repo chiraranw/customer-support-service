@@ -20,7 +20,7 @@ public class CustomerSupportController {
         this.customerSupportService = customerSupportService;
     }
 
-    @PostMapping("update-account-type")
+    @PostMapping("/update-account-type")
     public ResponseEntity<UpdateAccountResponse> updateAccountType(@RequestBody UpdateAccountRequest updateAccountRequest){
         return new ResponseEntity<>(customerSupportService.updateAccountType(updateAccountRequest), HttpStatus.CREATED);
     }
